@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hired Help | Home Repairs, Sprinklers, Yard Care &amp; Mowing in Orem, Utah</title>
+  <meta name="description" content="Hired Help serves Orem and surrounding Utah County communities — Provo, Vineyard, Lindon, Pleasant Grove, and American Fork — with basic home repairs, sprinkler repair, yard care, and lawn mowing. Call 385-412-1277 or email Sales@HiredHelpUT.com." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://YOURUSER.github.io/hired-help/" />
+  <meta property="og:title" content="Hired Help | Orem &amp; Utah County Home and Yard Help" />
+  <meta property="og:description" content="Basic home repairs, sprinkler repair, yard care, and lawn mowing. Serving Orem and surrounding Utah County communities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo.png" />
+  <meta name="theme-color" content="#102016" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #102016;
+      --green: #2f7a45;
+      --green-deep: #1a3324;
+      --gold: #c4a35a;
+      --cream: #f4efe4;
+      --paper: #fffdf8;
+      --muted: #5c675f;
+      --line: #e3dccf;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "DM Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1140px, calc(100% - 36px)); margin-inline: auto; }
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      animation: rise .8s ease forwards;
+    }
+    .d1 { animation-delay: .08s; } .d2 { animation-delay: .16s; }
+    .d3 { animation-delay: .24s; } .d4 { animation-delay: .32s; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+    @keyframes floaty {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes shimmer {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    header {
+      position: sticky; top: 0; z-index: 40;
+      background: rgba(16,32,22,.92);
+      backdrop-filter: blur(14px);
+      color: #fff;
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; min-height: 74px; gap: 16px; }
+    .logo-img { height: 50px; background: #fff; border-radius: 10px; padding: 4px 8px; }
+    nav { display: flex; gap: 20px; font-weight: 600; }
+    nav a { position: relative; }
+    nav a::after {
+      content: ""; position: absolute; left: 0; bottom: -6px; height: 2px; width: 0;
+      background: var(--gold); transition: width .25s;
+    }
+    nav a:hover::after { width: 100%; }
+    .phone { color: var(--gold); font-weight: 700; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      border: 0; border-radius: 999px; padding: 13px 20px; font-weight: 700; cursor: pointer;
+      transition: transform .2s, background .2s, box-shadow .2s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-gold { background: var(--gold); color: var(--ink); }
+    .btn-gold:hover { box-shadow: 0 10px 24px rgba(196,163,90,.35); }
+    .btn-light { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.35); }
+    .btn-dark { background: var(--green-deep); color: #fff; }
+    .menu { display: none; background: none; border: 0; color: #fff; font-size: 1.6rem; }
+    .hero {
+      min-height: 92vh; color: #fff; display: grid; align-items: end;
+      padding: 90px 0 70px;
+      background:
+        linear-gradient(180deg, rgba(16,32,22,.42), rgba(16,32,22,.78)),
+        url("https://images.pexels.com/photos/5587970/pexels-photo-5587970.jpeg?auto=compress&cs=tinysrgb&w=1800") center/cover no-repeat;
+    }
+    h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.12; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.6rem); max-width: 16ch; }
+    h2 { font-size: clamp(1.8rem, 3vw, 2.7rem); }
+    .lead { max-width: 38rem; margin: 16px 0 28px; color: #efe8d8; font-size: 1.12rem; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+    .chip {
+      border: 1px solid rgba(255,255,255,.28); border-radius: 999px;
+      padding: 7px 12px; background: rgba(255,255,255,.08); font-size: .9rem;
+      transition: background .2s, transform .2s;
+    }
+    .chip:hover { background: rgba(196,163,90,.25); transform: translateY(-2px); }
+    section { padding: 84px 0; }
+    .sub { color: var(--muted); margin-top: 12px; max-width: 40rem; }
+    .kicker { letter-spacing: .14em; text-transform: uppercase; font-size: .75rem; font-weight: 700; color: var(--green); }
+    .services { background: var(--cream); }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 32px; }
+    .card {
+      background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 24px;
+      transform-style: preserve-3d; transition: transform .25s, box-shadow .25s;
+    }
+    .card:hover { transform: translateY(-6px) rotateX(2deg); box-shadow: 0 18px 40px rgba(16,32,22,.08); }
+    .card h3 { margin-bottom: 8px; }
+    .card ul { margin: 12px 0 0 18px; color: var(--muted); display: grid; gap: 6px; }
+    .note { margin-top: 14px; font-weight: 600; }
+    .split { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; }
+    .split img { border-radius: 20px; height: 440px; width: 100%; object-fit: cover; animation: floaty 7s ease-in-out infinite; }
+    .checks { margin-top: 18px; display: grid; gap: 10px; }
+    .checks li { list-style: none; padding-left: 28px; position: relative; }
+    .checks li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 800; }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+    .gallery figure { position: relative; overflow: hidden; border-radius: 16px; }
+    .gallery img { width: 100%; height: 250px; object-fit: cover; transition: transform .6s; }
+    .gallery figure:hover img { transform: scale(1.08); }
+    .gallery figcaption {
+      position: absolute; inset: auto 0 0; padding: 14px;
+      background: linear-gradient(transparent, rgba(16,32,22,.82)); color: #fff; font-weight: 600;
+    }
+    .areas { background: var(--ink); color: #e8eee9; }
+    .areas .kicker { color: var(--gold); }
+    .area-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 28px; }
+    .area {
+      border: 1px solid rgba(255,255,255,.12); border-radius: 16px; padding: 20px;
+      background: #1a3324; transition: transform .2s, border-color .2s;
+    }
+    .area:hover { transform: translateY(-4px); border-color: var(--gold); }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 28px; }
+    .box { background: var(--cream); border-radius: 18px; padding: 28px; }
+    form { display: grid; gap: 12px; }
+    label { font-weight: 700; font-size: .92rem; }
+    input, select, textarea {
+      width: 100%; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; font: inherit;
+    }
+    textarea { min-height: 120px; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .ok { display: none; background: #e8f5ec; border: 1px solid #b7d8c0; color: var(--green-deep); padding: 12px; border-radius: 12px; }
+    footer { background: var(--ink); color: #c9d6cc; padding: 36px 0 22px; }
+    .foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .mobile-cta {
+      display: none; position: fixed; inset: auto 12px 12px; z-index: 50;
+      background: var(--gold); color: var(--ink); border-radius: 999px; padding: 14px;
+      font-weight: 800; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    }
+    @media (max-width: 860px) {
+      nav, .phone { display: none; }
+      nav.open {
+        display: flex; flex-direction: column; position: absolute; inset: 74px 14px auto;
+        background: #1a3324; padding: 16px; border-radius: 14px;
+      }
+      .menu { display: block; }
+      .grid-2, .split, .gallery, .area-grid, .contact-grid, .row { grid-template-columns: 1fr; }
+      .split img { height: 260px; }
+      .mobile-cta { display: block; }
+      section { padding: 64px 0; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Hired Help",
+    "telephone": "+13854121277",
+    "email": "Sales@HiredHelpUT.com",
+    "areaServed": ["Orem UT","Provo UT","Vineyard UT","Lindon UT","Pleasant Grove UT","American Fork UT"],
+    "description": "Basic home repairs, sprinkler repair and maintenance, yard care, and lawn mowing in Orem and surrounding Utah County communities."
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a href="#top"><img class="logo-img" src="logo.png" alt="Hired Help" /></a>
+      <nav id="links">
+        <a href="#services">Services</a>
+        <a href="#areas">Areas</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div style="display:flex;gap:12px;align-items:center">
+        <a class="phone" href="tel:+13854121277">385-412-1277</a>
+        <a class="btn btn-gold" href="#contact">Request help</a>
+        <button class="menu" id="menu" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="kicker reveal" style="color:#d4b56e">Serving Orem and surrounding Utah County communities</p>
+        <h1 class="reveal d1">Home and yard help that actually shows up.</h1>
+        <p class="lead reveal d2">Basic home repairs, sprinkler work, yard care, and lawn mowing for houses in Orem, Provo, Vineyard, Lindon, Pleasant Grove, and American Fork.</p>
+        <div class="hero-actions reveal d3">
+          <a class="btn btn-gold" href="tel:+13854121277">Call 385-412-1277</a>
+          <a class="btn btn-light" href="mailto:Sales@HiredHelpUT.com">Email Sales@HiredHelpUT.com</a>
+        </div>
+        <div class="chips reveal d4">
+          <a class="chip" href="#contact">Orem</a>
+          <a class="chip" href="#contact">Provo</a>
+          <a class="chip" href="#contact">Vineyard</a>
+          <a class="chip" href="#contact">Lindon</a>
+          <a class="chip" href="#contact">Pleasant Grove</a>
+          <a class="chip" href="#contact">American Fork</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="wrap">
+        <p class="kicker reveal">What we do</p>
+        <h2 class="reveal d1">Four services. No extras invented.</h2>
+        <p class="sub reveal d2">If a job is not listed, ask. We will tell you whether it is within our capabilities.</p>
+        <div class="grid-2">
+          <article class="card reveal">
+            <h3>Basic Home Repairs</h3>
+            <ul>
+              <li>Drywall patching and minor wall repairs</li>
+              <li>Door, hinge, latch, and lock adjustments</li>
+              <li>Fence and gate repairs</li>
+              <li>Shelving and wall-mounted item installation</li>
+              <li>Furniture and household-item assembly</li>
+              <li>Caulking and weatherstripping</li>
+              <li>Minor trim and molding repairs</li>
+              <li>Screen repair</li>
+              <li>Small painting and touch-up projects</li>
+              <li>Other basic household repairs and maintenance</li>
+            </ul>
+            <p class="note">Customers can contact us about projects that are not listed, and we can determine whether the work is within our capabilities.</p>
+          </article>
+          <article class="card reveal d2">
+            <h3>Sprinkler Repair and Maintenance</h3>
+            <ul>
+              <li>Sprinkler-head replacement</li>
+              <li>Broken sprinkler-line repair</li>
+              <li>Sprinkler adjustments</li>
+              <li>Coverage and overspray corrections</li>
+              <li>Valve troubleshooting and replacement</li>
+              <li>Timer and controller adjustments</li>
+              <li>Spring sprinkler startup</li>
+              <li>Fall sprinkler-system preparation</li>
+              <li>General system inspections and troubleshooting</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Yard Care</h3>
+            <ul>
+              <li>Shrub and hedge trimming</li>
+              <li>Flowerbed care</li>
+              <li>Weed removal</li>
+              <li>Planting flowers and small plants</li>
+              <li>General pruning</li>
+              <li>Leaf and debris cleanup</li>
+              <li>Seasonal yard cleanup</li>
+              <li>Mulch installation and refreshing</li>
+              <li>Basic landscape maintenance</li>
+              <li>General yard cleanup and upkeep</li>
+            </ul>
+          </article>
+          <article class="card reveal d2">
+            <h3>Lawn Mowing</h3>
+            <ul>
+              <li>Regular lawn mowing</li>
+              <li>Trimming and edging</li>
+              <li>Blowing grass clippings from sidewalks and driveways</li>
+              <li>One-time mowing</li>
+              <li>Recurring mowing service</li>
+              <li>Final mowing and cleanup at the end of the season</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap split">
+        <div>
+          <p class="kicker">Why call Hired Help</p>
+          <h2>Local help for Utah County houses.</h2>
+          <p class="sub">The work is the small list that piles up: a gate that sticks, a head that floods the sidewalk, a lawn that needs a clean mow, beds that need weeding. Ask first. We will say yes or no before anyone drives out.</p>
+          <ul class="checks">
+            <li>Email or call — no pricing published on the site</li>
+            <li>Primary area: Orem and nearby Utah County communities</li>
+            <li>Other Utah County cities considered by project, distance, and availability</li>
+          </ul>
+        </div>
+        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Maintained suburban home and yard" />
+      </div>
+    </section>
+
+    <section id="work" style="padding-top:0">
+      <div class="wrap">
+        <p class="kicker">Utah Valley look</p>
+        <h2>Neighborhoods under the Wasatch, not tropical stock yards.</h2>
+        <p class="sub">Replace these stand-in photos with your own job photos before ads go live.</p>
+        <div class="gallery">
+          <figure>
+            <img src="https://images.pexels.com/photos/5587970/pexels-photo-5587970.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Utah County neighborhood" />
+            <figcaption>Utah County neighborhoods</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Front yard of a single-family home" />
+            <figcaption>Front-yard care</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Hedge trimming" />
+            <figcaption>Yard care</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="areas" id="areas">
+      <div class="wrap">
+        <p class="kicker">Service area</p>
+        <h2>Serving Orem and surrounding Utah County communities.</h2>
+        <p class="sub" style="color:#c9d6cc">Primary area includes Provo, Vineyard, Lindon, Pleasant Grove, and American Fork. Other Utah County communities depend on the project, travel distance, and availability. Outside the immediate area? Contact us to check availability.</p>
+        <div class="area-grid">
+          <a class="area" href="#contact"><h3>Orem</h3><p>Primary service city.</p></a>
+          <a class="area" href="#contact"><h3>Provo</h3><p>Nearby Utah County.</p></a>
+          <a class="area" href="#contact"><h3>Vineyard</h3><p>Nearby Utah County.</p></a>
+          <a class="area" href="#contact"><h3>Lindon</h3><p>Nearby Utah County.</p></a>
+          <a class="area" href="#contact"><h3>Pleasant Grove</h3><p>Nearby Utah County.</p></a>
+          <a class="area" href="#contact"><h3>American Fork</h3><p>Nearby Utah County.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div class="box">
+          <p class="kicker">Request help</p>
+          <h2>Email or call. Or send the form.</h2>
+          <p class="sub">No prices on this page. Describe the property and the job.</p>
+          <p style="margin-top:14px"><strong>Phone:</strong> <a href="tel:+13854121277">385-412-1277</a></p>
+          <p><strong>Email:</strong> <a href="mailto:Sales@HiredHelpUT.com">Sales@HiredHelpUT.com</a></p>
+          <p><strong>Area:</strong> Serving Orem and surrounding Utah County communities.</p>
+        </div>
+        <form id="form">
+          <div class="row">
+            <div><label for="name">Name</label><input id="name" name="name" required /></div>
+            <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required /></div>
+          </div>
+          <div><label for="email">Email</label><input id="email" name="email" type="email" /></div>
+          <div>
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option>Orem</option><option>Provo</option><option>Vineyard</option>
+              <option>Lindon</option><option>Pleasant Grove</option><option>American Fork</option>
+              <option>Other Utah County — check availability</option>
+            </select>
+          </div>
+          <div>
+            <label for="need">What do you need?</label>
+            <select id="need" name="need">
+              <option>Basic home repairs</option>
+              <option>Sprinkler repair and maintenance</option>
+              <option>Yard care</option>
+              <option>Lawn mowing</option>
+              <option>Not listed — asking if you can help</option>
+            </select>
+          </div>
+          <div><label for="msg">Details</label><textarea id="msg" name="message" placeholder="Address area, what is broken or overgrown, and when you need help"></textarea></div>
+          <button class="btn btn-dark" type="submit">Send request</button>
+          <p class="ok" id="ok">Thanks. Call or email if you need a faster reply: 385-412-1277 · Sales@HiredHelpUT.com</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div>
+          <img class="logo-img" src="logo.png" alt="Hired Help" />
+          <p style="margin-top:10px">Serving Orem and surrounding Utah County communities.</p>
+        </div>
+        <div>
+          <p><a href="tel:+13854121277">385-412-1277</a></p>
+          <p><a href="mailto:Sales@HiredHelpUT.com">Sales@HiredHelpUT.com</a></p>
+        </div>
+      </div>
+      <p style="margin-top:16px;font-size:.88rem">© <span id="y"></span> Hired Help.</p>
+    </div>
+  </footer>
+  <a class="mobile-cta" href="tel:+13854121277">Call 385-412-1277</a>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const menu = document.getElementById("menu");
+    const links = document.getElementById("links");
+    menu.addEventListener("click", () => links.classList.toggle("open"));
+    links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => links.classList.remove("open")));
+    document.getElementById("form").addEventListener("submit", e => {
+      e.preventDefault();
+      document.getElementById("ok").style.display = "block";
+      e.target.reset();
+    });
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(el => { if (el.isIntersecting) el.target.style.animationPlayState = "running"; });
+    }, { threshold: .12 });
+    document.querySelectorAll(".reveal, .card").forEach(n => io.observe(n));
+  </script>
+</body>
+</html>
