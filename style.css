@@ -73,20 +73,13 @@ footer { background:var(--green-950); color:#c9d6cc; text-align:center; padding:
   nav.open { display:flex; flex-direction:column; position:absolute; top:60px; right:12px; background:var(--green-900); padding:14px; border-radius:12px; }
   .mobile-cta { display:block; position:fixed; bottom:12px; left:12px; right:12px; background:var(--gold); color:var(--green-950); text-align:center; padding:14px; border-radius:999px; font-weight:800; z-index:50; }
 }
-/* Make text inside white boxes readable */
+/* Fix text color inside the cream/white boxes */
 .steps li,
-.box,
-.card,
-.service,
-[class*="card"],
-[class*="box"],
-[class*="step"] {
+.box {
   color: #111 !important;
 }
 
 .steps li *,
-.box *,
-.card *,
-.service * {
+.box * {
   color: #111 !important;
 }
