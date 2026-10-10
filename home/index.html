@@ -1,219 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hired Help Home Services | Orem & Utah County</title>
-  <meta name="description" content="Basic home repairs, sprinkler repair, yard care, and lawn mowing in Orem, Provo, Vineyard, Lindon, Pleasant Grove, and American Fork." />
-  <link rel="canonical" href="https://hiredhelput.com/home/" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="icon" href="../icon-color.png" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hired Help Home Services | Home Repairs, Sprinklers, Yard Care &amp; Mowing in Orem, Utah</title>
+<meta name="description" content="Hired Help Home Services serves Orem and surrounding Utah County communities with basic home repairs, sprinkler repair, yard care, and lawn mowing. Call 385-412-1277 or email sales@hiredhelput.com." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style.css" />
 </head>
 <body class="theme-home">
-  <a class="skip" href="#main">Skip to content</a>
-  <div class="progress" aria-hidden="true"></div>
-  <header class="site-header">
-    <a href="../index.html" class="brand"><img src="../icon-color.png" alt="Hired Help" /></a>
-    <nav id="nav">
+
+<header class="site" id="siteHeader">
+  <div class="wrap nav">
+    <a class="logo" href="../index.html">
+      <img src="../icon-white.png" alt="" />
+      <span>Hired Help<small>Home Services</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
       <a href="#services">Services</a>
-      <a href="#how">How it works</a>
-      <a href="#work">Work</a>
       <a href="#areas">Areas</a>
-      <a href="#faq">FAQ</a>
+      <a href="#work">Work</a>
       <a href="#contact">Contact</a>
+      <a class="switch-link" href="../manufacturing/index.html">Manufacturing Support &rarr;</a>
     </nav>
-    <a class="phone" href="tel:+13854121277">385-412-1277</a>
-    <button class="menu" id="menuBtn" aria-label="Menu">☰</button>
-  </header>
-  <main id="main">
-    <section class="hero" style="background-image:linear-gradient(180deg,rgba(16,32,22,.45),rgba(16,32,22,.75)),url('../images/work-01.jpg')">
-      <div class="hero-inner">
-        <p class="kicker">Serving Orem and surrounding Utah County communities</p>
-        <h1>Home and yard help.</h1>
-        <p class="lead">Basic home repairs, sprinkler repair, yard care, and lawn mowing.</p>
-        <div class="actions">
-          <a class="btn btn-gold" href="#contact">Request help</a>
-          <a class="btn btn-outline" href="tel:+13854121277">Call 385-412-1277</a>
+    <div class="nav-cta">
+      <a class="phone" href="tel:+13854121277">385-412-1277</a>
+      <a class="btn btn-gold" href="#contact">Request Help</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero photo" style="--hero-img:url('https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1600');padding-top:64px;">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow fade-up">Serving Orem &amp; surrounding Utah County</p>
+        <h1 class="fade-up">Home and yard help that actually shows up.</h1>
+        <p class="lead fade-up">Basic home repairs, sprinkler work, yard care, and lawn mowing for houses in Orem, Provo, Vineyard, Lindon, Pleasant Grove, and American Fork.</p>
+        <div class="hero-actions fade-up">
+          <a class="btn btn-gold" href="tel:+13854121277">Call 385-412-1277</a>
+          <a class="btn btn-outline" href="mailto:sales@hiredhelput.com">Email sales@hiredhelput.com</a>
         </div>
       </div>
-    </section>
-    <p class="season-banner" id="seasonBanner"></p>
-    <section id="services" class="services">
-      <div class="wrap">
-        <p class="kicker">Services</p>
-        <h2>What we handle</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Basic Home Repairs</h3>
-            <ul>
-              <li>Drywall patching and minor wall repairs</li>
-              <li>Door, hinge, latch, and lock adjustments</li>
-              <li>Fence and gate repairs</li>
-              <li>Shelving and wall-mounted item installation</li>
-              <li>Furniture and household-item assembly</li>
-              <li>Caulking and weatherstripping</li>
-              <li>Minor trim and molding repairs</li>
-              <li>Screen repair</li>
-              <li>Small painting and touch-up projects</li>
-              <li>Other basic household repairs and maintenance</li>
-            </ul>
-            <p class="note">Not listed? Ask. We’ll say if we can do it.</p>
-            <button class="btn btn-dark request" data-service="Basic home repairs">Request this service</button>
-          </article>
-          <article class="card">
-            <h3>Sprinkler Repair and Maintenance</h3>
-            <ul>
-              <li>Sprinkler-head replacement</li>
-              <li>Broken sprinkler-line repair</li>
-              <li>Sprinkler adjustments</li>
-              <li>Coverage and overspray corrections</li>
-              <li>Valve troubleshooting and replacement</li>
-              <li>Timer and controller adjustments</li>
-              <li>Spring sprinkler startup</li>
-              <li>Fall sprinkler-system preparation</li>
-              <li>General system inspections and troubleshooting</li>
-            </ul>
-            <button class="btn btn-dark request" data-service="Sprinkler repair and maintenance">Request this service</button>
-          </article>
-          <article class="card">
-            <h3>Yard Care</h3>
-            <ul>
-              <li>Shrub and hedge trimming</li>
-              <li>Flowerbed care</li>
-              <li>Weed removal</li>
-              <li>Planting flowers and small plants</li>
-              <li>General pruning</li>
-              <li>Leaf and debris cleanup</li>
-              <li>Seasonal yard cleanup</li>
-              <li>Mulch installation and refreshing</li>
-              <li>Basic landscape maintenance</li>
-              <li>General yard cleanup and upkeep</li>
-            </ul>
-            <button class="btn btn-dark request" data-service="Yard care">Request this service</button>
-          </article>
-          <article class="card">
-            <h3>Lawn Mowing</h3>
-            <ul>
-              <li>Regular lawn mowing</li>
-              <li>Trimming and edging</li>
-              <li>Blowing grass clippings from sidewalks and driveways</li>
-              <li>One-time mowing</li>
-              <li>Recurring mowing service</li>
-              <li>Final mowing and cleanup at the end of the season</li>
-            </ul>
-            <button class="btn btn-dark request" data-service="Lawn mowing">Request this service</button>
-          </article>
-        </div>
+      <div class="clipboard fade-up" aria-hidden="true">
+        <div class="clip-top"></div>
+        <h3>The list that piles up</h3>
+        <ul class="clip-list" id="clipList">
+          <li><span class="clip-box"></span><span>Gate that sticks</span></li>
+          <li><span class="clip-box"></span><span>Sprinkler head flooding the walk</span></li>
+          <li><span class="clip-box"></span><span>Lawn needs a clean mow</span></li>
+          <li><span class="clip-box"></span><span>Beds need weeding</span></li>
+        </ul>
       </div>
-    </section>
-    <section id="how" class="how">
-      <div class="wrap">
-        <p class="kicker">How it works</p>
-        <h2>Three steps</h2>
-        <ol class="steps">
-          <li><strong>Tell us the job.</strong> Call, email, or use the form.</li>
-          <li><strong>We confirm fit.</strong> We will say whether we can help.</li>
-          <li><strong>We schedule.</strong> If it fits, we arrange a time.</li>
-        </ol>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap">
+      <div class="trust-item"><strong>Ask first</strong>we say yes or no before anyone drives out</div>
+      <div class="trust-item"><strong>No pricing published</strong>call or email for a straight answer</div>
+      <div class="trust-item"><strong>Primary area</strong>Orem &amp; nearby Utah County</div>
+      <div class="trust-item"><strong>Reach us</strong>385-412-1277 · sales@hiredhelput.com</div>
+    </div>
+  </div>
+
+  <section class="alt" id="services">
+    <div class="wrap">
+      <div class="section-head fade-up">
+        <p class="eyebrow">What we do</p>
+        <h2>Four services. No extras invented.</h2>
+        <p>If a job isn't listed, ask. We'll tell you whether it's within our capabilities.</p>
       </div>
-    </section>
-    <section id="work">
-      <div class="wrap">
-        <h2>Work</h2>
-        <div class="gallery">
-          <figure>
-            <img src="../images/work-01.jpg" alt="House exterior" />
-            <figcaption>Home exterior</figcaption>
-          </figure>
-          <figure>
-            <img src="../images/work-02.jpg" alt="Fence and yard" />
-            <figcaption>Fence and yard</figcaption>
-          </figure>
-        </div>
+
+      <div class="svc-grid">
+        <article class="svc-card fade-up" data-open="false">
+          <div class="svc-head"><h3>🔧 Basic Home Repairs</h3><span class="svc-toggle">+</span></div>
+          <ul class="svc-visible">
+            <li>Drywall patching &amp; wall repairs</li>
+            <li>Door, hinge &amp; lock adjustments</li>
+            <li>Fence &amp; gate repairs</li>
+            <li>Shelving &amp; furniture assembly</li>
+            <li>Caulking, trim &amp; screen repairs</li>
+          </ul>
+          <div class="svc-more-wrap"><div class="svc-more-inner"><ul class="svc-more">
+            <li>Weatherstripping</li>
+            <li>Minor trim &amp; molding repairs</li>
+            <li>Small painting &amp; touch-ups</li>
+            <li>Wall-mounted item installation</li>
+            <li>Other basic household repairs</li>
+          </ul></div></div>
+          <p class="svc-note">Not listed? Ask. We'll tell you if it's something we can help with.</p>
+        </article>
+
+        <article class="svc-card fade-up" data-open="false">
+          <div class="svc-head"><h3>💧 Sprinkler Repair &amp; Maintenance</h3><span class="svc-toggle">+</span></div>
+          <ul class="svc-visible">
+            <li>Sprinkler-head &amp; line repair</li>
+            <li>Coverage &amp; valve adjustments</li>
+            <li>Timer &amp; controller setup</li>
+            <li>Spring startup / fall winterization</li>
+          </ul>
+          <div class="svc-more-wrap"><div class="svc-more-inner"><ul class="svc-more">
+            <li>Sprinkler-head replacement</li>
+            <li>Broken sprinkler-line repair</li>
+            <li>Overspray corrections</li>
+            <li>Valve troubleshooting &amp; replacement</li>
+            <li>General system inspections</li>
+          </ul></div></div>
+        </article>
+
+        <article class="svc-card fade-up" data-open="false">
+          <div class="svc-head"><h3>🌿 Yard Care</h3><span class="svc-toggle">+</span></div>
+          <ul class="svc-visible">
+            <li>Shrub &amp; hedge trimming</li>
+            <li>Weeding &amp; flowerbed care</li>
+            <li>Planting &amp; pruning</li>
+            <li>Leaf &amp; seasonal cleanup</li>
+            <li>Mulch installation</li>
+          </ul>
+          <div class="svc-more-wrap"><div class="svc-more-inner"><ul class="svc-more">
+            <li>Planting flowers &amp; small plants</li>
+            <li>General pruning</li>
+            <li>Basic landscape maintenance</li>
+            <li>General yard cleanup &amp; upkeep</li>
+          </ul></div></div>
+        </article>
+
+        <article class="svc-card fade-up" data-open="false">
+          <div class="svc-head"><h3>🌾 Lawn Mowing</h3><span class="svc-toggle">+</span></div>
+          <ul class="svc-visible">
+            <li>Regular or one-time mowing</li>
+            <li>Trimming, edging &amp; cleanup</li>
+            <li>Recurring service available</li>
+          </ul>
+          <div class="svc-more-wrap"><div class="svc-more-inner"><ul class="svc-more">
+            <li>Blowing clippings from sidewalks &amp; driveways</li>
+            <li>Final mowing &amp; cleanup at end of season</li>
+          </ul></div></div>
+        </article>
       </div>
-    </section>
-    <section id="areas" class="areas">
-      <div class="wrap">
+      <p class="svc-ask">Click a service to see the full list.</p>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap why">
+      <div class="fade-up">
+        <p class="eyebrow">Why call Hired Help</p>
+        <h2>The small list, handled.</h2>
+        <p style="color:var(--muted);margin-top:12px;">A gate that sticks, a head that floods the sidewalk, a lawn that needs a clean mow, beds that need weeding. Ask first, and we'll say yes or no before anyone drives out.</p>
+        <ul class="checks">
+          <li>No pricing published. Call or email for a straight answer.</li>
+          <li>We tell you upfront if a job is outside what we do.</li>
+        </ul>
+      </div>
+      <img class="fade-up" src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Maintained suburban home and yard" />
+    </div>
+  </section>
+
+  <section class="alt" id="work">
+    <div class="wrap">
+      <div class="section-head fade-up">
+        <p class="eyebrow">Utah Valley look</p>
+        <h2>Neighborhoods under the Wasatch.</h2>
+        <p>Click a photo for a closer look. Real job photos will replace these as they come in.</p>
+      </div>
+      <div class="gallery">
+        <figure class="fade-up" data-full="https://images.pexels.com/photos/5587970/pexels-photo-5587970.jpeg?auto=compress&cs=tinysrgb&w=1400" data-cap="Utah County neighborhoods">
+          <img src="https://images.pexels.com/photos/5587970/pexels-photo-5587970.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Utah County neighborhood street" />
+          <figcaption>Utah County neighborhoods</figcaption>
+        </figure>
+        <figure class="fade-up" data-full="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1400" data-cap="Front-yard care">
+          <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Front yard of a single-family home" />
+          <figcaption>Front-yard care</figcaption>
+        </figure>
+        <figure class="fade-up" data-full="https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=1400" data-cap="Yard care">
+          <img src="https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Hedge trimming" />
+          <figcaption>Yard care</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas">
+    <div class="wrap">
+      <div class="section-head fade-up">
+        <p class="eyebrow">Service area</p>
         <h2>Serving Orem and surrounding Utah County communities.</h2>
-        <div class="chips">
-          <button data-city="Orem">Orem</button>
-          <button data-city="Provo">Provo</button>
-          <button data-city="Vineyard">Vineyard</button>
-          <button data-city="Lindon">Lindon</button>
-          <button data-city="Pleasant Grove">Pleasant Grove</button>
-          <button data-city="American Fork">American Fork</button>
+        <p>Primary area is Orem. Other Utah County communities are considered by project, distance, and availability. Tap a city to check availability there.</p>
+      </div>
+      <div class="area-chip-row fade-up">
+        <button class="area-chip primary" data-city="Orem">Orem (primary area)</button>
+        <button class="area-chip" data-city="Provo">Provo</button>
+        <button class="area-chip" data-city="Vineyard">Vineyard</button>
+        <button class="area-chip" data-city="Lindon">Lindon</button>
+        <button class="area-chip" data-city="Pleasant Grove">Pleasant Grove</button>
+        <button class="area-chip" data-city="American Fork">American Fork</button>
+        <button class="area-chip" data-city="Other">Other Utah County: ask</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="contact">
+    <div class="wrap contact-grid">
+      <div class="info-box fade-up">
+        <p class="eyebrow">Request help</p>
+        <h2>Email or call. Or send the form.</h2>
+        <p>No prices on this page. Describe the property and the job.</p>
+        <p><strong>Phone:</strong> <a href="tel:+13854121277">385-412-1277</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sales@hiredhelput.com">sales@hiredhelput.com</a></p>
+        <p><strong>Area:</strong> Orem and surrounding Utah County communities.</p>
+      </div>
+      <form id="quoteForm" class="fade-up" data-subject="Home Services request (website)">
+        <div class="form-row">
+          <div><label for="name">Name</label><input id="name" name="name" required /></div>
+          <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required /></div>
         </div>
-      </div>
-    </section>
-    <section id="faq" class="faq">
-      <div class="wrap">
-        <h2>Common questions</h2>
-        <div class="accordion">
-          <details>
-            <summary>What areas do you serve?</summary>
-            <p>Orem, Provo, Vineyard, Lindon, Pleasant Grove, and American Fork. Other Utah County locations by availability.</p>
-          </details>
-          <details>
-            <summary>How do I request help?</summary>
-            <p>Call 385-412-1277, email sales@hiredhelput.com, or use the form.</p>
-          </details>
-          <details>
-            <summary>What if my project is not on the list?</summary>
-            <p>Contact us. We will let you know if we can help.</p>
-          </details>
+        <div><label for="email">Email</label><input id="email" name="email" type="email" /></div>
+        <div>
+          <label for="city">City</label>
+          <select id="city" name="city">
+            <option>Orem</option><option>Provo</option><option>Vineyard</option><option>Lindon</option>
+            <option>Pleasant Grove</option><option>American Fork</option>
+            <option>Other Utah County — check availability</option>
+          </select>
         </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="wrap contact-grid">
-        <div class="box">
-          <h2>Call or email</h2>
-          <p><a href="tel:+13854121277">385-412-1277</a></p>
-          <p><a href="mailto:sales@hiredhelput.com">sales@hiredhelput.com</a></p>
+        <div>
+          <label for="service">What do you need?</label>
+          <select id="service" name="service">
+            <option>Basic home repairs</option>
+            <option>Sprinkler repair &amp; maintenance</option>
+            <option>Yard care</option>
+            <option>Lawn mowing</option>
+            <option>Not listed: asking if you can help</option>
+          </select>
         </div>
-        <form id="contactForm">
-          <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" />
-          <div class="row">
-            <label>Name<input name="name" required /></label>
-            <label>Phone<input name="phone" type="tel" required /></label>
-          </div>
-          <label>Email<input name="email" type="email" /></label>
-          <label>City
-            <select name="city" id="citySelect">
-              <option>Orem</option><option>Provo</option><option>Vineyard</option>
-              <option>Lindon</option><option>Pleasant Grove</option><option>American Fork</option>
-              <option>Other — check availability</option>
-            </select>
-          </label>
-          <label>Service
-            <select name="service" id="serviceSelect">
-              <option>Basic home repairs</option>
-              <option>Sprinkler repair and maintenance</option>
-              <option>Yard care</option>
-              <option>Lawn mowing</option>
-              <option>Something else</option>
-            </select>
-          </label>
-          <label>Details<textarea name="message"></textarea></label>
-          <button class="btn btn-dark" type="submit">Send</button>
-          <p class="form-status" id="formStatus" hidden></p>
-        </form>
+        <div><label for="message">Details</label><textarea id="message" name="message" placeholder="Property details and what you need done"></textarea></div>
+        <button class="btn btn-dark" type="submit">Send request</button>
+        <p class="success" id="formSuccess">Your email app should open with the request filled in. Or call 385-412-1277.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="logo" style="margin-bottom:8px;"><img src="../icon-white.png" alt="" style="width:30px;" /><span style="color:#fff;">Hired Help Home Services</span></div>
+        <p>Serving Orem and surrounding Utah County communities.</p>
+        <p style="margin-top:8px;"><a href="../manufacturing/index.html">Looking for Manufacturing Support? &rarr;</a></p>
       </div>
-    </section>
-    <section class="reviews-placeholder">
-      <div class="wrap">
-        <h2>Customer reviews</h2>
-        <p>Coming soon.</p>
+      <div>
+        <p><a href="tel:+13854121277">385-412-1277</a></p>
+        <p><a href="mailto:sales@hiredhelput.com">sales@hiredhelput.com</a></p>
       </div>
-    </section>
-  </main>
-  <footer>
-    <p>Hired Help · 385-412-1277 · sales@hiredhelput.com</p>
-  </footer>
-  <a class="mobile-cta" href="tel:+13854121277">Call 385-412-1277</a>
-  <script src="../script.js"></script>
+    </div>
+    <p class="copy">© <span id="year"></span> Hired Help.</p>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a class="btn btn-outline" style="color:var(--green-950);border-color:var(--green-950);" href="tel:+13854121277">Call</a>
+  <a class="btn btn-dark" href="#contact">Request Help</a>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="" />
+  <p class="lightbox-cap" id="lightboxCap"></p>
+</div>
+
+<script src="../script.js"></script>
 </body>
 </html>
