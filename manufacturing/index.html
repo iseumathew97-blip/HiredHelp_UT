@@ -3,30 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hired Help Manufacturing Support</title>
+  <title>Hired Help Manufacturing Support | On-site Training & Maintenance</title>
+  <meta name="description" content="On-site manufacturing equipment training and equipment maintenance for businesses." />
+  <link rel="canonical" href="https://hiredhelput.com/manufacturing/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="icon" href="../icon-color.png" />
 </head>
 <body class="theme-mfg">
+  <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <a href="../index.html" class="brand"><img src="../icon-color.png" alt="Hired Help" /></a>
-    <nav>
+    <nav id="nav">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="phone" href="tel:+13854121277">385-412-1277</a>
     <button class="menu" id="menuBtn" aria-label="Menu">☰</button>
   </header>
-  <main>
+
+  <main id="main">
     <section class="hero mfg-hero">
       <div class="hero-inner">
+        <p class="kicker">For businesses</p>
         <h1>Manufacturing support</h1>
         <p>On-site equipment training and equipment maintenance.</p>
         <a class="btn btn-gold" href="#contact">Request help</a>
       </div>
     </section>
-    <section id="contact" style="padding:64px 0">
+
+    <section id="services" style="padding:64px 0">
       <div class="wrap">
-        <h2>Request support</h2>
+        <p class="kicker">What we provide</p>
+        <h2>Equipment training and maintenance</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Equipment training</h3>
+            <p>On-site training for manufacturing equipment.</p>
+            <!-- PLACEHOLDER: add specific equipment types or sample training topics when available -->
+          </article>
+          <article class="card">
+            <h3>Equipment maintenance</h3>
+            <p>On-site equipment maintenance.</p>
+            <!-- PLACEHOLDER: add industries served or safety/credentials when available -->
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="how">
+      <div class="wrap">
+        <p class="kicker">How it works</p>
+        <h2>Three steps</h2>
+        <ol class="steps">
+          <li><strong>Tell us the equipment and location.</strong> Call, email, or use the form.</li>
+          <li><strong>We confirm fit.</strong> We will say whether the work is something we can help with.</li>
+          <li><strong>We schedule.</strong> If it fits, we arrange the on-site visit.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div class="box">
+          <h2>Request support</h2>
+          <p><a href="tel:+13854121277"><strong>385-412-1277</strong></a></p>
+          <p><a href="mailto:sales@hiredhelput.com"><strong>sales@hiredhelput.com</strong></a></p>
+        </div>
         <form id="contactForm">
           <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" />
           <label>Name<input name="name" required /></label>
@@ -39,8 +85,9 @@
       </div>
     </section>
   </main>
+
   <footer>
-    <p>385-412-1277 · sales@hiredhelput.com</p>
+    <p><a href="tel:+13854121277">385-412-1277</a> · <a href="mailto:sales@hiredhelput.com">sales@hiredhelput.com</a></p>
   </footer>
   <script src="../script.js"></script>
 </body>
