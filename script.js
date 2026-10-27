@@ -75,20 +75,41 @@
     document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open');});
   }
 
-  // contact form: opens the visitor's email app with the request filled in.
-  // (No backend yet; swap for a form service later if wanted.)
+  // contact form.
+  // Set FORM_ENDPOINT to a form service URL (e.g. https://formspree.io/f/xxxxxxx)
+  // and submissions are emailed to the address configured in that service.
+  // While it is empty, the form falls back to opening the visitor's email app.
+  var FORM_ENDPOINT='https://formspree.io/f/mwllljkn';
   var form=$('#quoteForm');
   if(form){
     form.addEventListener('submit',function(e){
       e.preventDefault();
-      var lines=[];
+      var lines=[], data={};
       $$('input,select,textarea',form).forEach(function(f){
         var lab=form.querySelector('label[for="'+f.id+'"]');
-        if(f.value) lines.push((lab?lab.textContent:f.name)+': '+f.value);
+        var name=lab?lab.textContent:f.name;
+        if(f.value){lines.push(name+': '+f.value); data[name]=f.value;}
       });
       var subject=form.dataset.subject||'Website request';
-      window.location.href='mailto:sales@hiredhelput.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'));
-      $('#formSuccess').classList.add('show');
+      var ok=$('#formSuccess'), btn=$('button[type="submit"]',form);
+      if(!FORM_ENDPOINT){
+        window.location.href='mailto:sales@hiredhelput.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'));
+        ok.classList.add('show');
+        return;
+      }
+      data._subject=subject;
+      if(btn){btn.disabled=true; btn.dataset.label=btn.textContent; btn.textContent='Sending...';}
+      fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+        .then(function(r){
+          if(!r.ok) throw new Error('send failed');
+          ok.textContent='Thanks, we got your request. We will contact you soon. Or call 385-412-1277.';
+          ok.classList.add('show'); form.reset();
+        })
+        .catch(function(){
+          ok.textContent='Sorry, that did not send. Please call 385-412-1277 or email sales@hiredhelput.com.';
+          ok.classList.add('show');
+        })
+        .then(function(){ if(btn){btn.disabled=false; btn.textContent=btn.dataset.label;} });
     });
   }
 })();
