@@ -103,7 +103,9 @@
         .then(function(r){
           if(!r.ok) throw new Error('send failed');
           ok.textContent='Thanks, we got your request. We will contact you soon. Or call 385-412-1277.';
-          ok.classList.add('show'); form.reset();
+          ok.classList.add('show');
+          if(window.hhTrackForm){var src=$('#source',form);window.hhTrackForm(src&&src.value?src.value:'not_given');}
+          form.reset();
         })
         .catch(function(){
           ok.textContent='Sorry, that did not send. Please call 385-412-1277 or email sales@hiredhelput.com.';
