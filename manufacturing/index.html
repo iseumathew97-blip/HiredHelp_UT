@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../style.css" />
+<script src="../analytics.js"></script>
 </head>
 <body class="theme-mfg">
 
@@ -141,6 +142,19 @@
           </select>
         </div>
         <div><label for="equipment">Equipment</label><input id="equipment" name="equipment" placeholder="What equipment does this involve?" /></div>
+        <div>
+          <label for="source">How did you hear about us?</label>
+          <select id="source" name="source">
+            <option value="">Choose one (optional)</option>
+            <option>Google search</option>
+            <option>Google Maps / Business Profile</option>
+            <option>Google ad</option>
+            <option>Facebook / Instagram</option>
+            <option>Referral from a friend or neighbor</option>
+            <option>Saw a sign or truck</option>
+            <option>Other</option>
+          </select>
+        </div>
         <div><label for="message">Details</label><textarea id="message" name="message" placeholder="Facility location and what you need done"></textarea></div>
         <button class="btn btn-dark" type="submit">Send request</button>
         <p class="success" id="formSuccess">Your email app should open with the request filled in. Or call 385-412-1277.</p>
